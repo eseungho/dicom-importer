@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dicom-import:
+    image: dcm4che/dcm4che-tools:5.31.0
+    container_name: dicom-importer
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - /volume1/docker/dicom_importer:/data
+      - /volume1/dicom_files:/dicom
+      - /volume1/docker/dicom_importer/entrypoint.sh:/entrypoint.sh
+    environment:
+      TZ: "Asia/Seoul"  # timezone 설정 부분
+    entrypoint: /entrypoint.sh
+    command: /data/file_watcher_and_exec.sh
+    restart: always

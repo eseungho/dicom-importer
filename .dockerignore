@@ -1,0 +1,38 @@
+# VCS
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+
+# Logs & temp
+*.log
+log
+logs
+data/log
+tmp
+*.tmp
+*.timestamp
+*.pid
+*.lock*
+
+# Python/cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+.venv
+venv
+env
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Host-mounted data
+dicom/archived
+dicom/import

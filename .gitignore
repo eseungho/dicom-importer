@@ -1,0 +1,34 @@
+# IDE
+.idea/
+.vscode/
+
+# Python/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs & temp
+*.log
+log/
+logs/
+data/log/
+tmp/
+*.tmp
+*.timestamp
+*.pid
+*.lock*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Generated archives
+dicom/archived/
+dicom/import/
